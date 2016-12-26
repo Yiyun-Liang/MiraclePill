@@ -6,7 +6,7 @@ A small UI project to learn the basics of IOS Storyboards.
 
 <img src="https://github.com/Yiyun-Liang/Swift-Miniprojects/blob/master/MiraclePill/Screenshots/MiraclePill.png" width="376" height="692" />
 
-# Random Keynotes
+# Random Notes
 
 + Constraints
  - Leading and trailing
