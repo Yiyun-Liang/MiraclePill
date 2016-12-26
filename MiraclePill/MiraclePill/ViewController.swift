@@ -14,6 +14,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var provincePicker: UIPickerView!
     @IBOutlet weak var provPickerBtn: UIButton!
     
+    @IBOutlet weak var countryTitle: UILabel!
+    @IBOutlet weak var countryTxtField: UITextField!
+    @IBOutlet weak var postalCodeTitle: UILabel!
+    @IBOutlet weak var postalCodeTxtField: UITextField!
+    
+    @IBOutlet var pageView: UIView!
+    
+    
     let provinces = ["Alberta", "British Columbia", "Manitoba", "Newfoundland and Labrador", "New Brunswick", "Nova Scotia", "Ontario", "Prince Edward Island", "Québec", "Saskatchewan"]
     
     override func viewDidLoad() {
@@ -33,6 +41,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func provPickerBtnPressed(_ sender: Any) {
         // select province button pressed
         provincePicker.isHidden = false
+        
+        countryTitle.isHidden = true
+        countryTxtField.isHidden = true
+        postalCodeTitle.isHidden = true
+        postalCodeTxtField.isHidden = true
     }
     
     // need to have these functions due to implementing protocols
@@ -54,7 +67,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // what happens when we select a row
         provPickerBtn.setTitle(provinces[row], for: UIControlState.normal)
         provincePicker.isHidden = true
+        
+        countryTitle.isHidden = false
+        countryTxtField.isHidden = false
+        postalCodeTitle.isHidden = false
+        postalCodeTxtField.isHidden = false
     }
+    
 
 }
 

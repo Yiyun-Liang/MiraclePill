@@ -1,6 +1,8 @@
-Miracle Pill
+# Miracle Pill
 
-Screenshots
+A small UI project to learn the basics of IOS Storyboards.
+
+# Screenshots
 
 <img
 src="https://github.com/Yiyun-Liang/Yiyun-Liang.github.io/blob/master/images/shoot.png"
