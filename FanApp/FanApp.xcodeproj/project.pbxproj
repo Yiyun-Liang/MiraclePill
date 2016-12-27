@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4AA9F95B1E1275AE0088C9AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F95A1E1275AE0088C9AD /* AppDelegate.swift */; };
-		4AA9F95D1E1275AE0088C9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F95C1E1275AE0088C9AD /* ViewController.swift */; };
+		4AA9F95D1E1275AE0088C9AD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F95C1E1275AE0088C9AD /* MainVC.swift */; };
 		4AA9F9601E1275AE0088C9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9F95E1E1275AE0088C9AD /* Main.storyboard */; };
 		4AA9F9621E1275AE0088C9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9F9611E1275AE0088C9AD /* Assets.xcassets */; };
 		4AA9F9651E1275AE0088C9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9F9631E1275AE0088C9AD /* LaunchScreen.storyboard */; };
+		4AA9F9711E12804E0088C9AD /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F9701E12804E0088C9AD /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AA9F9571E1275AE0088C9AD /* FanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA9F95A1E1275AE0088C9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AA9F95C1E1275AE0088C9AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AA9F95C1E1275AE0088C9AD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4AA9F95F1E1275AE0088C9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AA9F9611E1275AE0088C9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA9F9641E1275AE0088C9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA9F9661E1275AE0088C9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA9F9701E12804E0088C9AD /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		4AA9F9591E1275AE0088C9AD /* FanApp */ = {
 			isa = PBXGroup;
 			children = (
+				4AA9F96F1E12775E0088C9AD /* Model */,
+				4AA9F96D1E1277270088C9AD /* View */,
+				4AA9F96C1E12770E0088C9AD /* Controller */,
 				4AA9F95A1E1275AE0088C9AD /* AppDelegate.swift */,
-				4AA9F95C1E1275AE0088C9AD /* ViewController.swift */,
 				4AA9F95E1E1275AE0088C9AD /* Main.storyboard */,
 				4AA9F9611E1275AE0088C9AD /* Assets.xcassets */,
 				4AA9F9631E1275AE0088C9AD /* LaunchScreen.storyboard */,
 				4AA9F9661E1275AE0088C9AD /* Info.plist */,
 			);
 			path = FanApp;
+			sourceTree = "<group>";
+		};
+		4AA9F96C1E12770E0088C9AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AA9F95C1E1275AE0088C9AD /* MainVC.swift */,
+				4AA9F9701E12804E0088C9AD /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AA9F96D1E1277270088C9AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AA9F96F1E12775E0088C9AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA9F95D1E1275AE0088C9AD /* ViewController.swift in Sources */,
+				4AA9F9711E12804E0088C9AD /* VideoVC.swift in Sources */,
+				4AA9F95D1E1275AE0088C9AD /* MainVC.swift in Sources */,
 				4AA9F95B1E1275AE0088C9AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
