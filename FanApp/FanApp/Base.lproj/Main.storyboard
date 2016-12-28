@@ -151,14 +151,30 @@
                                     <constraint firstAttribute="height" constant="232" id="Yph-dI-7gs"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7C-Qu-ki9">
+                                <rect key="frame" x="21" y="282" width="333" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="3Qp-J2-Ncf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="y7C-Qu-ki9" firstAttribute="leading" secondItem="sbi-lI-yIB" secondAttribute="leadingMargin" constant="5" id="8LT-88-VX2"/>
                             <constraint firstAttribute="trailing" secondItem="30l-ET-SZQ" secondAttribute="trailing" id="LFE-F5-Ogp"/>
                             <constraint firstItem="30l-ET-SZQ" firstAttribute="top" secondItem="sbi-lI-yIB" secondAttribute="top" id="Msf-O6-BRv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y7C-Qu-ki9" secondAttribute="trailing" constant="5" id="YFf-ZN-6fJ"/>
+                            <constraint firstItem="y7C-Qu-ki9" firstAttribute="top" secondItem="30l-ET-SZQ" secondAttribute="bottom" constant="50" id="bER-05-K3J"/>
                             <constraint firstItem="30l-ET-SZQ" firstAttribute="leading" secondItem="sbi-lI-yIB" secondAttribute="leading" id="fXM-a0-Gtw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="y7C-Qu-ki9" id="xUU-Fj-IVA"/>
+                        <outlet property="webView" destination="30l-ET-SZQ" id="chm-dZ-bHP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0X-pL-EWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
