@@ -13,6 +13,8 @@
 		4AA9F9621E1275AE0088C9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9F9611E1275AE0088C9AD /* Assets.xcassets */; };
 		4AA9F9651E1275AE0088C9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9F9631E1275AE0088C9AD /* LaunchScreen.storyboard */; };
 		4AA9F9711E12804E0088C9AD /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F9701E12804E0088C9AD /* VideoVC.swift */; };
+		4AA9F9731E1281B80088C9AD /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F9721E1281B80088C9AD /* PartyCell.swift */; };
+		4AA9F9751E1283EA0088C9AD /* FanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9F9741E1283EA0088C9AD /* FanApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4AA9F9641E1275AE0088C9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA9F9661E1275AE0088C9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA9F9701E12804E0088C9AD /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		4AA9F9721E1281B80088C9AD /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		4AA9F9741E1283EA0088C9AD /* FanApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		4AA9F96D1E1277270088C9AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4AA9F9721E1281B80088C9AD /* PartyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		4AA9F96F1E12775E0088C9AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4AA9F9741E1283EA0088C9AD /* FanApp.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 			files = (
 				4AA9F9711E12804E0088C9AD /* VideoVC.swift in Sources */,
 				4AA9F95D1E1275AE0088C9AD /* MainVC.swift in Sources */,
+				4AA9F9731E1281B80088C9AD /* PartyCell.swift in Sources */,
 				4AA9F95B1E1275AE0088C9AD /* AppDelegate.swift in Sources */,
+				4AA9F9751E1283EA0088C9AD /* FanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

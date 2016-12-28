@@ -13,7 +13,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="MainVC" customClass="ViewController" customModule="FanApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="MainVC" customClass="MainVC" customModule="FanApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="262" width="375" height="405"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="7Sl-tc-Xui">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="93" id="7Sl-tc-Xui" customClass="PartyCell" customModule="FanApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Sl-tc-Xui" id="1Wm-iw-366">
@@ -101,6 +101,10 @@
                                                 <constraint firstItem="fap-9g-dzm" firstAttribute="centerY" secondItem="1Wm-iw-366" secondAttribute="centerY" id="pTE-ZY-moP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="fap-9g-dzm" id="yVr-UB-u6t"/>
+                                            <outlet property="videoTitleLbl" destination="nb9-Eb-AzA" id="Psy-g4-sKj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -120,6 +124,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="Im8-HQ-hfW" id="p8B-3R-2ib"/>
                         <segue destination="oSN-rW-TJf" kind="showDetail" identifier="VideoVC" id="Pbc-C1-ptJ"/>
                     </connections>
                 </viewController>
